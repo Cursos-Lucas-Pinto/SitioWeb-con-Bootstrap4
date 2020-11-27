@@ -100,7 +100,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-9">
                     <div class="card-body">
                         <p>
-                            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Martillo</h5>
+                            <h5 class="card-title" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Martillo</h5>
                             <h5 class="card-subtitle text-muted">Metal</h5>
                             <img class="card-img-top" src="imagenes/martillo.jpg" alt="martillo">
                             <p class="card-text">
@@ -115,7 +115,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-9">
                     <div class="card-body">
                         <p>
-                            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Tornillos</h5>
+                            <h5 class="card-title" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Tornillos</h5>
                             <h5 class="card-subtitle text-muted">Metal</h5>
                             <img class="card-img-top" src="imagenes/tornillos.jpg" alt="tornillos">
                             <p class="card-text">placerat. Nam rutrum nisi et ultrices elementum. Mauris ut metus vitae arcu sem</p>
@@ -128,7 +128,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-9">
                     <div class="card-body">
                         <p>
-                            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Pinza</h5>
+                            <h5 class="card-title" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Pinza</h5>
                             <h5 class="card-subtitle text-muted">Metal</h5>
                             <img class="card-img-top" src="imagenes/pinza.jpg" alt="pinza">
                             <p class="card-text"> et ultrices elementum. Mauris ut metus v</p>
@@ -141,7 +141,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-9">
                     <div class="card-body">
                         <p>
-                            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Llave francesa</h5>
+                            <h5 class="card-title" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Llave francesa</h5>
                             <h5 class="card-subtitle text-muted">Metal</h5>
                             <img class="card-img-top" src="imagenes/llave francesa.jpg" alt="llave francesa">
                             <p class="card-text">Martillo de papel aluminio.</p>
@@ -154,7 +154,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-9">
                     <div class="card-body">
                         <p>
-                            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Destornillador</h5>
+                            <h5 class="card-title" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Destornillador</h5>
                             <h5 class="card-subtitle text-muted">Metal</h5>
                             <img class="card-img-top" src="imagenes/destornillador.jpg" alt="Destornillador">
                             <p class="card-text"> nec finibus quis, sodales ac eros. Aliquam non </p>
@@ -167,7 +167,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-9">
                     <div class="card-body">
                         <p>
-                            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Taladro Electrico</h5>
+                            <h5 class="card-title" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Taladro Electrico</h5>
                             <h5 class="card-subtitle text-muted">Metal</h5>
                             <img class="card-img-top" src="imagenes/taladro-electrico.jpg" alt="taladro electrico">
                             <p class="card-text">quis. Phasellus posuere dictum metus, et convalli</p>
@@ -180,7 +180,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-9">
                     <div class="card-body">
                         <p>
-                            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Cutter</h5>
+                            <h5 class="card-title" data-placement="top" title="Las primeras compras cuentan con tornillos gratis.">Cutter</h5>
                             <h5 class="card-subtitle text-muted">Metal</h5>
                             <img class="card-img-top" src="imagenes/cutter.jpg" alt="cutter">
                             <p class="card-text">Suspendisse sollicitudin porttitor torto</p>
@@ -188,14 +188,14 @@
                         </p>
                     </div>
                     <div>
-                        <button class="btn btn-primary btn-reserva" data-toggle="popover" data-content="Consulta las promociones vigentes." title="Promaciones"><span class="oi oi-plus"></span> Comprar</button>
+                        <button class="btn btn-primary btn-reserva" data-content="Consulta las promociones vigentes." title="Promaciones"><span class="oi oi-plus"></span> Comprar</button>
                     </div>
                 </div>
             </div>
             
             <br>
             
-            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
             
             <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -268,10 +268,31 @@
 
     <script>
         $(function(){
-            $("[data-toggle='tooltip']").tooltip();
-            $("[data-toggle='popover']").popover();
             $('.carousel').carousel({
                 interval: 1000
+            });
+            $('#contacto').on('show.bs.modal', function (e){
+                console.log('El modal se está mostrando');
+
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-primary');
+                $('#contactoBtn').prop('disabled', true);
+            });
+
+            $('#contacto').on('shown.bs.modal', function (e){
+                console.log('El modal se mostró');
+            });
+
+            $('#contacto').on('hide.bs.modal', function (e){
+                console.log('El modal se esta ocultando');
+            });
+
+            $('#contacto').on('hidden.bs.modal', function (e){
+                console.log('El modal se ocultó');
+                
+                $('#contactoBtn').prop('disabled', false);
+                $('#contactoBtn').removeClass('btn-primary');
+                $('#contactoBtn').addClass('btn-outline-success');
             });
         });
     </script>

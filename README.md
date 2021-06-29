@@ -1,4 +1,4 @@
-<h1>Enunciado:</h1><br/>
+<h1>Enunciado</h1><br/>
     
     1_ En la página donde está definido un modal, un script que registra por console las activaciones de todos los eventos del modal (cuando comienza a abrirse, cuando se terminó de abrir, cuando comienza a ocultarse y cuando se terminó de ocultar).
     
